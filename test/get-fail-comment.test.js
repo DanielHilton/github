@@ -2,7 +2,7 @@ const test = require('ava');
 const SemanticReleaseError = require('@semantic-release/error');
 const getfailComment = require('../lib/get-fail-comment');
 
-test('Comment with mutiple errors', (t) => {
+test('Comment with multiple errors', (t) => {
   const errors = [
     new SemanticReleaseError('Error message 1', 'ERR1', 'Error 1 details'),
     new SemanticReleaseError('Error message 2', 'ERR2', 'Error 2 details'),
